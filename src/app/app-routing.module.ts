@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  {  path: 'blocos', loadChildren: './camara/blocos/blocos.module#BlocosModule' },
+];
 
 @NgModule({
   imports: [
